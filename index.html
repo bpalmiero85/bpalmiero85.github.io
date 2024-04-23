@@ -7,25 +7,142 @@
     <title>Vite App</title>
   </head>
   <body>
-    <div
-      id="app"
-      class="flex h-screen flex-col items-center justify-between py-8 text-center text-[#2c3e50] selection:bg-green-100"
-    >
-      <div>
-        <h1
-          class="bg-gradient-to-r from-green-600 to-sky-400 bg-clip-text text-5xl font-black text-transparent selection:bg-transparent"
+    <section class="bg-white antialiased dark:bg-gray-900">
+      <div class="mx-auto max-w-screen-xl px-4 py-8 sm:py-16 lg:px-6 lg:py-24">
+        <div class="mx-auto max-w-2xl text-center">
+          <h2
+            class="text-3xl font-extrabold leading-tight text-gray-900 dark:text-gray-300 sm:text-4xl"
+          >
+            Hello 👋 I'm Brian!
+          </h2>
+          <img class="p-5"
+            src="src/assets/images/tempDevProfPic.jpeg"
+            alt="A picture of the most handsome man in the world"
+          />
+          <p
+            class="mt-4 text-base font-normal text-gray-400 dark:text-gray-400 sm:text-xl"
+          >
+            Full stack Java developer
+          </p>
+        </div>
+
+        <div 
+          class="mt-12 grid-cols-1 gap-x-20 gap-y-12 text-center sm:mt-16 sm:grid-cols-2 lg:grid-cols-3  flex flex-wrap justify-center gap-4"
         >
-          Hello !
-        </h1>
-        <h3 class="my-4 text-2xl font-bold text-gray-500">
-          Vite + JS + tailwindcss v3
-        </h3>
-        <a href="https://vitejs.dev/guide/features.html" target="_blank"
-          >Documentation</a
-        >
+          <div class="space-y-4">
+            <span
+              class="inline-flex items-center rounded text-3xl grayscale opacity-90"
+            >
+               💼
+            </span>
+            <h3
+              class="text-2xl font-bold leading-tight text-gray-900 dark:text-white"
+            >
+              Portfolio
+            </h3>
+            <p class="text-lg font-normal text-gray-500 dark:text-gray-400">
+              Check out my portfolio to see projects I have done!
+            </p>
+            <a
+              href="#"
+              title=""
+              class="bg-primary-700 hover:bg-primary-800 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 inline-flex items-center 
+              justify-center rounded-lg px-5 py-2.5 text-center text-sm font-medium text-white focus:outline-none focus:ring-4"
+              role="button"
+            >
+              View portfolio
+              <svg
+                aria-hidden="true"
+                class="ml-2 -mr-1 h-5 w-5"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+          </div>
+
+          <div class="space-y-4">
+            <span
+               class="inline-flex items-center rounded text-3xl grayscale opacity-70"
+            >
+              ✉️
+            </span>
+            <h3
+              class="text-2xl font-bold leading-tight text-gray-900 dark:text-white"
+            >
+              Contact
+            </h3>
+            <p class="text-lg font-normal text-gray-500 dark:text-gray-400">
+              Get a hold of me!
+            </p>
+            <a
+              href="#"
+              title=""
+              class="bg-primary-700 hover:bg-primary-800 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 inline-flex items-center justify-center rounded-lg px-5 py-2.5 text-center text-sm font-medium text-white focus:outline-none focus:ring-4 pt-10"
+              role="button"
+            >
+              Go to contact form 
+              <svg
+                aria-hidden="true"
+                class="ml-2 -mr-1 h-5 w-5"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+          </div>
+
+          <div class="space-y-4">
+            <span
+              class="inline-flex items-center rounded text-3xl grayscale opacity-70"
+            >
+              🐱
+            </span>
+            <h3
+              class="text-2xl font-bold leading-tight text-gray-900 dark:text-white"
+            >
+              GitHub
+            </h3>
+            <p class="text-lg font-normal text-gray-500 dark:text-gray-400">
+              Check out my GitHub page.
+            </p>
+            <a
+              href="#"
+              title=""
+              class="bg-primary-700 hover:bg-primary-800 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 inline-flex items-center justify-center rounded-lg px-5 py-2.5 text-center text-sm font-medium text-white focus:outline-none focus:ring-4 pt-10"
+              role="button"
+            >
+              View GitHub page
+              <svg
+                aria-hidden="true"
+                class="ml-2 -mr-1 h-5 w-5"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
       </div>
-      <img class="block" src="./src/assets/powered-by-vitawind-bright.png" />
-    </div>
+    </section>
     <script type="module" src="./src/main.js"></script>
   </body>
 </html>
