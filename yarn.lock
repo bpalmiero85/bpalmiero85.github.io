@@ -339,6 +339,11 @@ dlv@^1.1.3:
   resolved "https://registry.npmjs.org/dlv/-/dlv-1.1.3.tgz"
   integrity sha512-+HlytyjlPKnIG8XuRG8WvmBP8xs8P71y+SKKS6ZXWoEgLuePxtDoUEiH7WkdePWrQ5JBpE6aoVqfZfJUQkjXwA==
 
+dotenv@^16.4.5:
+  version "16.4.5"
+  resolved "https://registry.npmjs.org/dotenv/-/dotenv-16.4.5.tgz"
+  integrity sha512-ZmdL2rui+eB2YwhsWzjInR8LldtZHGDoQ1ugH85ppHKwpUHL7j7rN0Ti9NCnGiQbhaZ11FpR+7ao1dNsmduNUg==
+
 eastasianwidth@^0.2.0:
   version "0.2.0"
   resolved "https://registry.npmjs.org/eastasianwidth/-/eastasianwidth-0.2.0.tgz"
@@ -381,10 +386,37 @@ es-errors@^1.3.0:
   resolved "https://registry.npmjs.org/es-errors/-/es-errors-1.3.0.tgz"
   integrity sha512-Zf5H2Kxt2xjTvbJvP2ZWLEICxA6j+hAmMzIlypy4xcBg1vKVnx89Wy0GbS+kf5cwCVFFzdCFh2XSCFNULS6csw==
 
-esbuild@^0.12.8:
-  version "0.12.19"
-  resolved "https://registry.npmjs.org/esbuild/-/esbuild-0.12.19.tgz"
-  integrity sha512-5NuT1G6THW7l3fsSCDkcPepn24R0XtyPjKoqKHD8LfhqMXzCdz0mrS9HgO6hIhzVT7zt0T+JGbzCqF5AH8hS9w==
+esbuild-darwin-arm64@0.14.54:
+  version "0.14.54"
+  resolved "https://registry.npmjs.org/esbuild-darwin-arm64/-/esbuild-darwin-arm64-0.14.54.tgz"
+  integrity sha512-OPafJHD2oUPyvJMrsCvDGkRrVCar5aVyHfWGQzY1dWnzErjrDuSETxwA2HSsyg2jORLY8yBfzc1MIpUkXlctmw==
+
+esbuild@^0.14.27:
+  version "0.14.54"
+  resolved "https://registry.npmjs.org/esbuild/-/esbuild-0.14.54.tgz"
+  integrity sha512-Cy9llcy8DvET5uznocPyqL3BFRrFXSVqbgpMJ9Wz8oVjZlh/zUSNbPRbov0VX7VxN2JH1Oa0uNxZ7eLRb62pJA==
+  optionalDependencies:
+    "@esbuild/linux-loong64" "0.14.54"
+    esbuild-android-64 "0.14.54"
+    esbuild-android-arm64 "0.14.54"
+    esbuild-darwin-64 "0.14.54"
+    esbuild-darwin-arm64 "0.14.54"
+    esbuild-freebsd-64 "0.14.54"
+    esbuild-freebsd-arm64 "0.14.54"
+    esbuild-linux-32 "0.14.54"
+    esbuild-linux-64 "0.14.54"
+    esbuild-linux-arm "0.14.54"
+    esbuild-linux-arm64 "0.14.54"
+    esbuild-linux-mips64le "0.14.54"
+    esbuild-linux-ppc64le "0.14.54"
+    esbuild-linux-riscv64 "0.14.54"
+    esbuild-linux-s390x "0.14.54"
+    esbuild-netbsd-64 "0.14.54"
+    esbuild-openbsd-64 "0.14.54"
+    esbuild-sunos-64 "0.14.54"
+    esbuild-windows-32 "0.14.54"
+    esbuild-windows-64 "0.14.54"
+    esbuild-windows-arm64 "0.14.54"
 
 escalade@^3.1.1:
   version "3.1.1"
@@ -906,7 +938,7 @@ postcss-value-parser@^4.0.0, postcss-value-parser@^4.2.0:
   resolved "https://registry.npmjs.org/postcss-value-parser/-/postcss-value-parser-4.2.0.tgz"
   integrity sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==
 
-postcss@^8.0.0, postcss@^8.1.0, postcss@^8.2.14, postcss@^8.3.6, postcss@^8.4.21, postcss@^8.4.23, postcss@^8.4.31, postcss@>=8.0.9:
+postcss@^8.0.0, postcss@^8.1.0, postcss@^8.2.14, postcss@^8.4.13, postcss@^8.4.21, postcss@^8.4.23, postcss@^8.4.31, postcss@>=8.0.9:
   version "8.4.38"
   resolved "https://registry.npmjs.org/postcss/-/postcss-8.4.38.tgz"
   integrity sha512-Wglpdk03BSfXkHoQa3b/oulrotAkwrlLDRSOb9D0bN86FdRyE9lppSp33aHNPgBa0JKCoB+drFLZkQoRRYae5A==
@@ -974,7 +1006,7 @@ readdirp@~3.6.0:
   dependencies:
     picomatch "^2.2.1"
 
-resolve@^1.1.7, resolve@^1.20.0, resolve@^1.22.2:
+resolve@^1.1.7, resolve@^1.22.0, resolve@^1.22.2:
   version "1.22.8"
   resolved "https://registry.npmjs.org/resolve/-/resolve-1.22.8.tgz"
   integrity sha512-oKWePCxqpd6FlLvGV1VU0x7bkPmmCNolxzjMf4NczoDnQcIWrAF+cPtZn5i6n+RfD2d9i0tzpKnG6Yk168yIyw==
@@ -988,10 +1020,10 @@ reusify@^1.0.4:
   resolved "https://registry.npmjs.org/reusify/-/reusify-1.0.4.tgz"
   integrity sha512-U9nH88a3fc/ekCF1l0/UP1IosiuIjyTh7hBvXVMHYgVcfGvt897Xguj2UOLDeI5BG2m7/uwyaLVT6fbtCwTyzw==
 
-rollup@^2.38.5:
-  version "2.56.1"
-  resolved "https://registry.npmjs.org/rollup/-/rollup-2.56.1.tgz"
-  integrity sha512-KkrsNjeiTfGJMUFBi/PNfj3fnt70akqdoNXOjlzwo98uA1qrlkmgt6SGaK5OwhyDYCVnJb6jb2Xa2wbI47P4Nw==
+"rollup@>=2.59.0 <2.78.0":
+  version "2.77.3"
+  resolved "https://registry.npmjs.org/rollup/-/rollup-2.77.3.tgz"
+  integrity sha512-/qxNTG7FbmefJWoeeYJFbHehJ2HNWnjkAFRKzWN/45eNBBF/r8lo992CwcJXEzyVxs5FmfId+vTSTQDb+bxA+g==
   optionalDependencies:
     fsevents "~2.3.2"
 
@@ -1265,15 +1297,15 @@ vitawind@^2.2.4:
     postcss "^8.4.31"
     tailwindcss "^3.3.5"
 
-vite@^2.4.4:
-  version "2.4.4"
-  resolved "https://registry.npmjs.org/vite/-/vite-2.4.4.tgz"
-  integrity sha512-m1wK6pFJKmaYA6AeZIUXyiAgUAAJzVXhIMYCdZUpCaFMGps0v0IlNJtbmPvkUhVEyautalajmnW5X6NboUPsnw==
+vite@^2.9.18:
+  version "2.9.18"
+  resolved "https://registry.npmjs.org/vite/-/vite-2.9.18.tgz"
+  integrity sha512-sAOqI5wNM9QvSEE70W3UGMdT8cyEn0+PmJMTFvTB8wB0YbYUWw3gUbY62AOyrXosGieF2htmeLATvNxpv/zNyQ==
   dependencies:
-    esbuild "^0.12.8"
-    postcss "^8.3.6"
-    resolve "^1.20.0"
-    rollup "^2.38.5"
+    esbuild "^0.14.27"
+    postcss "^8.4.13"
+    resolve "^1.22.0"
+    rollup ">=2.59.0 <2.78.0"
   optionalDependencies:
     fsevents "~2.3.2"
 
