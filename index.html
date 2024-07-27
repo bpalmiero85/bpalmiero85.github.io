@@ -234,9 +234,9 @@
       </div>
     </div>
   </footer>
-  <script type="text/javascript">
+  <script type="module">
     (function() {
-      emailjs.init('VITE_EMAILJS_USER_ID'); 
+      emailjs.init("ZkQfANdcZnMH2U1KL"); 
     })();
     
     async function sendMail(event) {
@@ -250,7 +250,7 @@
       };
 
       try {
-        const response = await emailjs.send('VITE_EMAILJS_SERVICE_ID', 'VITE_EMAILJS_TEMPLATE_ID', params); 
+        const response = await emailjs.send('service_3r4n4np', 'template_pd7sskq', params); 
         if (response.status === 200 || response.ok) {
           document.getElementById("name").value = "";
           document.getElementById("email").value = "";
