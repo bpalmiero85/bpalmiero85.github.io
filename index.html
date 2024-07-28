@@ -15,31 +15,37 @@
 </head>
 <body class="flex min-h-screen flex-col bg-gray-900 text-white">
   <header>
-    <nav>
-      <div class="navbar">
-        <div class="dropdown">
-          <button class="menu" aria-label="Menu">
-            <span class="menu-line"></span>
-            <span class="menu-line"></span>
-            <span class="menu-line"></span>
+    <nav class="bg-gray-800 p-4">
+      <div class="flex justify-between items-center">
+        <div></div>
+        <div class="md:hidden">
+          <button id="menu-button" class="text-white focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
           </button>
-          <div class="dropdown-content">
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-          </div>
         </div>
+        <div class="hidden md:flex space-x-4">
+          <a href="#about" class="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">About</a>
+          <a href="#projects" class="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Projects</a>
+          <a href="#contact" class="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+        </div>
+      </div>
+      <div class="md:hidden hidden mt-4 space-y-2" id="mobile-menu">
+        <a href="#about" class="block text-white hover:bg-gray-700 px-3 py-2 rounded-md text-base font-medium">About</a>
+        <a href="#projects" class="block text-white hover:bg-gray-700 px-3 py-2 rounded-md text-base font-medium">Projects</a>
+        <a href="#contact" class="block text-white hover:bg-gray-700 px-3 py-2 rounded-md text-base font-medium">Contact</a>
       </div>
     </nav>
   </header>
   <section class="flex-grow">
     <div class="mx-auto max-w-screen-xl px-4 py-8 sm:py-16 lg:px-6 lg:py-24">
       <div class="mx-auto max-w-2xl text-center">
-        <h1 class="text-3xl font-extrabold leading-tight dark:text-gray-300 sm:text-4xl">
+        <h1 class="text-3xl font-extrabold leading-tight text-gray-300 sm:text-4xl">
           Hello 👋 I'm Brian!
         </h1>
         <img class="mx-auto p-5 project-image" src="./src/assets/Images/brian-business.jpeg" alt="A picture of Brian" />
-        <p class="mt-4 text-base font-normal text-gray-400 dark:text-gray-400 sm:text-xl">
+        <p class="mt-4 text-base font-normal text-gray-400 sm:text-xl">
           Full Stack Java Developer
         </p>
       </div>
@@ -117,6 +123,7 @@
         <div>
           <label for="email" class="block mb-2 text-sm font-medium dark:text-gray-300">Your email:</label>
           <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@email.com" required>
+          <p class="text-gray-400">Your email is my only way to get back to you. Please make sure it is correct.</p>
         </div>
         <div>
           <label for="subject" class="block mb-2 text-sm font-medium dark:text-gray-300">Subject:</label>
@@ -214,7 +221,7 @@
          <div class="text-gray-400 dark:text-gray-400">
   <h2><strong>&#8226 Solo Self-Guided Project</strong></h2>
   <ul>
-    <li><strong>&#8226 Technologies:</strong> Java, Spring Boot, React, Spring <div style="margin-left: 25px">Security, H2 Database, Lombok, EmailJS</div></li>
+    <li><strong>&#8226 Technologies:</strong> Java, Spring Boot, React, Spring <div style="margin-left: 25px">Security, H2 Database, Lombok</div></li>
     <li><strong>&#8226 Features:</strong>
       <ul>
         <li style="margin-left: 25px">&#8226 User registration with email verification</li>
@@ -274,6 +281,15 @@
     }
 
     document.getElementById("contactForm").addEventListener("submit", sendMail);
+    
+    document.addEventListener("DOMContentLoaded", function () {
+      const menuButton = document.getElementById("menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuButton.addEventListener("click", function () {
+        mobileMenu.classList.toggle("hidden");
+      });
+    });
   </script>
 </body>
 </html>
