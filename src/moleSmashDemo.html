@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" class="min-h-screen">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Whac-A-Mole Game - Application Demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white min-h-screen flex items-center justify-center">
+  <div class="text-center pt-20">
+    <h2 class="text-3xl">Arcade Dayz - Super Mole Smash Game Demo</h2>
+    <p class="text-gray-400">This is a demonstration of one of my contributions to the application</p>
+    <video width="640" height="480" controls poster="./assets/Images/arcade-dayz-demo-thumbnail.png" class="mx-auto mb-4">
+      <source src="./assets/Images/moleSmash-demo-vid.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p class="pb-6 text-gray-400 text-lg">VEED logo in the upper right-hand corner of this video is not part of the app. It is the screen capture service.</p>
+    <a href="/index.html" class="mx-3 bg-gray-700 hover:bg-primary-800 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 inline-flex items-center justify-center rounded-lg px-5 py-2.5 text-center text-sm font-medium focus:outline-none focus:ring-4">
+      Go back
+    </a>
+    <div class="min-w-full md:min-w-0 mb-3 text-gray-300 dark:text-gray-400 text-lg flex flex-wrap container mx-auto px-4 md:px-24 w-full md:w-2/3 whitespace-normal">
+  
+      <div class="p-5 mt-5 rounded-2xl bg-gray-800 w-full">
+        <h4 class="text-2xl underline pb-2">Start a Game</h4>
+        <p>Users can start a new game by clicking the "Play" button. The game starts with a 30-second timer during which the user can smash moles and avoid monsters to score points.</p>
+      </div>
+
+      <div class="p-5 mt-5 rounded-2xl bg-gray-800 w-full">
+        <h4 class="text-2xl underline pb-2">Smash Moles</h4>
+        <p>Users can smash moles that appear in random holes. Each mole hit increases the user's score by 1 point. The goal is to smash as many moles as possible within the given time.</p>
+      </div>
+
+      <div class="p-5 mt-5 rounded-2xl bg-gray-800 w-full">
+        <h4 class="text-2xl underline pb-2">Avoid Monsters</h4>
+        <p>Users should avoid hitting monsters that occasionally appear instead of moles. Each monster hit decreases the user's score by 2 points. Hitting a monster can potentially end the game if the score drops to zero.</p>
+      </div>
+
+      <div class="p-5 mt-5 rounded-2xl bg-gray-800 w-full">
+        <h4 class="text-2xl underline pb-2">View Timer</h4>
+        <p>The remaining game time is displayed at the top of the screen. The game ends when the timer reaches zero, and the user's final score is displayed.</p>
+      </div>
+
+      <div class="p-5 mt-5 rounded-2xl bg-gray-800 w-full">
+        <h4 class="text-2xl underline pb-2">Restart Game</h4>
+        <p>Users can restart the game after it ends by clicking the "Play Again" button. This resets the score and the timer for a new game session.</p>
+      </div>
+
+      <div class="p-5 mt-5 rounded-2xl bg-gray-800 w-full">
+        <h4 class="text-2xl underline pb-2">Top Scores</h4>
+        <p>Users can view the top three high scores achieved by players. This leaderboard updates automatically when a new high score is recorded.</p>
+      </div>
+
+      <div class="p-5 mt-5 rounded-2xl bg-gray-800 w-full">
+        <h4 class="text-2xl underline pb-2">Player Info</h4>
+        <p>Users can view their username and current high score. The username is fetched upon register/login, and the score is fetched upon game end.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
