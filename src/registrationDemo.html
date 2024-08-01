@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" class="min-h-screen">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration - Application Demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white min-h-screen flex items-center justify-center">
+  <div class="text-center pt-20">
+    <h2 class="text-3xl">User Registration Demo</h2>
+    <video width="640" height="480" controls poster="./assets/Images/registration-demo-thumbnail.png" class="mx-auto mb-4">
+      <source src="./assets/Images/registration-demo-vid.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p class="pb-6 text-gray-400 text-lg">VEED logo in upper right hand corner of this video is not part of the app. It is the screen capture service.</p>
+    <a href="/index.html" class="mx-3 bg-gray-700 hover:bg-primary-800 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 inline-flex items-center justify-center rounded-lg px-5 py-2.5 text-center text-sm font-medium focus:outline-none focus:ring-4">
+      Go back
+    </a>
+
+    <div class="min-w-full md:min-w-0 mb-3 text-gray-300 dark:text-gray-400 text-lg flex flex-wrap container mx-auto px-4 md:px-24 w-full md:w-2/3 whitespace-normal">
+      
+      <div class="p-5 mt-5 rounded-2xl bg-gray-800 w-full">
+        <h4 class="text-2xl underline pb-2">Sign Up</h4>
+        <p>Users can register a new account by filling out the registration form with their first name, last name, email, username, and password. All fields are required, and the email must be valid.</p>
+      </div>
+      
+      <div class="p-5 mt-5 rounded-2xl bg-gray-800 w-full">
+        <h4 class="text-2xl underline pb-2">Form Validation</h4>
+        <p>Client-side validation ensures that all required fields are filled correctly. If any field is invalid, an error message is displayed to the user.</p>
+      </div>
+      
+      <div class="p-5 mt-5 rounded-2xl bg-gray-800 w-full">
+        <h4 class="text-2xl underline pb-2">Account Creation</h4>
+        <p>Upon successful form submission, the application sends the registration data to the backend. If the username or email is already taken, an error message is displayed.</p>
+      </div>
+      
+      <div class="p-5 mt-5 rounded-2xl bg-gray-800 w-full">
+        <h4 class="text-2xl underline pb-2">Email Verification</h4>
+        <p>After successful registration, a verification email is sent to the user's email address. The email contains a verification link that the user must click to verify their account.</p>
+      </div>
+      
+      <div class="p-5 mt-5 rounded-2xl bg-gray-800 w-full">
+        <h4 class="text-2xl underline pb-2">Verification Process</h4>
+        <p>Users can verify their account by clicking the link in the verification email. This redirects them to a verification page, where the application confirms their account and logs them in.</p>
+      </div>
+      
+      <div class="p-5 mt-5 rounded-2xl bg-gray-800 w-full">
+        <h4 class="text-2xl underline pb-2">Login</h4>
+        <p>Once the account is verified, users can log in with their username and password. If the account is not verified, an error message prompts them to check their email for the verification link.</p>
+      </div>
+      
+      <div class="p-5 mt-5 rounded-2xl bg-gray-800 w-full">
+        <h4 class="text-2xl underline pb-2">User Info</h4>
+        <p>After logging in, users can view and edit their account information.</p>
+      </div>
+
+      <div class="p-5 mt-5 rounded-2xl bg-gray-800 w-full">
+        <h4 class="text-2xl underline pb-2">Logout</h4>
+        <p>Users can log out from their account, which clears the session and removes the user cookie. This action ensures that the user must log in again to access protected resources.</p>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
